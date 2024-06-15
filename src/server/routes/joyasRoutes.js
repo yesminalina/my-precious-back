@@ -1,9 +1,8 @@
 import { Router } from 'express'
-import { getAllJoyas, getFilteredJoyas } from '../controllers/joyas.controller.js'
 
 const router = Router()
 
-router.get('/joyas', getAllJoyas)
-router.get('/joyas/filtros', getFilteredJoyas)
+router.get('/joyas')
+router.get('/joyas/filtros')
 
 export default router
